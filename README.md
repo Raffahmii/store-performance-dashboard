@@ -1,3 +1,8 @@
+## 🖼 Dashboard Preview
+[![Dashboard](store-performance-web/images/dashboard-preview.png)]
+
+---
+
 # 📊 Store Performance Analytics Dashboard
 
 A fully interactive Excel-based data analytics project designed to analyze store performance across product categories, sales trends, customer behavior, and business KPIs.
@@ -99,11 +104,6 @@ The goal is to understand revenue patterns, identify top-performing products, an
   - About Data  
   - Insights  
   - Contact Page  
-
----
-
-## 🖼 Dashboard Preview
-[![Dashboard](store-performance-web/images/dashboard-preview.png)]
 
 ---
 
