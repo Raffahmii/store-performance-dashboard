@@ -103,7 +103,7 @@ The goal is to understand revenue patterns, identify top-performing products, an
 ---
 
 ## 🖼 Dashboard Preview
-Check in folder images/. . .
+[![Dashboard](store-performance-web/images/dashboard-preview.png)]
 
 ---
 
