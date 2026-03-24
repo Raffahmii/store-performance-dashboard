@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Performance Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onClick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="25px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#about">About Data</a></li>
+            <li><a href="#kpi">KPI Summary</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <ul>
+            <li class="logo"><a href="#"><i class="fas fa-chart-line"></i> StoreAnalytics</a></li>
+            <li class="hideOnMobile"><a href="#dashboard">Dashboard</a></li>
+            <li class="hideOnMobile"><a href="#about">About Data</a></li>
+            <li class="hideOnMobile"><a href="#kpi">KPI Summary</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact Me</a></li>
+            <li class="menu-btn" onClick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="30px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-container">
+            <div class="left">
+                <div class="badge">STORE ANALYTICS</div>
+                <h1>STORE PERFORMANCE <span class="highlight">ANALYTICS</span> PROJECT</h1>
+                <p>Dashboard, Insights, KPI summary in one powerful platform. Track your store performance with real-time data visualization and actionable insights.</p>
+
+                <div class="buttons">
+                    <a href="#dashboard" class="btn primary">
+                        <i class="fas fa-chart-bar"></i> View Dashboard
+                    </a>
+                    <a href="#contact" class="btn secondary">
+                        <i class="fas fa-envelope"></i> Contact ME
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image-container">
+                    <img src="src/WhatsApp_Image_2025-11-21_at_14.23.14__1_-removebg-preview (1).png" alt="Analytics Dashboard">
+                </div>
+            </div>
+        </div>
+        <div class="bg-shape"></div>
+    </header>
+
+    <main>
+        <!-- Dashboard Preview Section -->
+        <section id="dashboard" class="dashboard-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>DASHBOARD</h2>
+                    <p>Explore the interactive features and insights of our analytics dashboard</p>
+                </div>
+                
+                <div class="preview-content">
+                    <div class="dashboard-visual">
+                        <div class="dashboard-container">
+                            <div class="dashboard-image-wrapper">
+                                <img src="src/dashboard_img.png" alt="Dashboard Preview" class="dashboard-image">
+                                <div class="download-overlay">
+                                    <a href="store_data.xlsx" class="download-btn" download>
+                                        <i class="fas fa-download"></i>
+                                        <span>Download Excel File</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="data-analyst-info">
+                                <div class="analyst-card">
+                                    <div class="analyst-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="analyst-content">
+                                        <h4>Data Quality</h4>
+                                        <p>991 validated transactions with 99.8% accuracy rate</p>
+                                    </div>
+                                </div>
+                                <div class="analyst-card">
+                                    <div class="analyst-icon">
+                                        <i class="fas fa-calculator"></i>
+                                    </div>
+                                    <div class="analyst-content">
+                                        <h4>Advanced Calculations</h4>
+                                        <p>Real-time KPI tracking and performance metrics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-info">
+                        <div class="features-section">
+                            <h3>KEY FEATURES</h3>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <div class="feature-header">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h4>Revenue Trend</h4>
+                                    </div>
+                                    <p>Track sales performance over time with interactive charts and trend analysis</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <div class="feature-header">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <h4>Monthly Pattern</h4>
+                                    </div>
+                                    <p>Identify seasonal trends and monthly performance patterns</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <div class="feature-header">
+                                        <i class="fas fa-credit-card"></i>
+                                        <h4>Payment Method Behavior</h4>
+                                    </div>
+                                    <p>Analyze customer payment preferences and transaction methods</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <div class="feature-header">
+                                        <i class="fas fa-star"></i>
+                                        <h4>Top Performing Products</h4>
+                                    </div>
+                                    <p>Discover best-selling items and product performance metrics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Data Section -->
+        <section id="about" class="about-data">
+            <div class="container">
+                <div class="section-header">
+                    <h2>ABOUT THE DATA</h2>
+                    <p>Comprehensive retail transaction data analysis for 2023-2024</p>
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="card-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Summer Data</h3>
+                        <p>Data transaksi toko retail tahun 2023-2024 dengan fokus pada analisis performa penjualan dan kategori produk dengan kontribusi tertinggi</p>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Data Volume</h3>
+                        <div class="data-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">991</span>
+                                <span class="stat-label">Total Transaksi</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">7</span>
+                                <span class="stat-label">Kolom Utama</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Analysis Tools</h3>
+                        <div class="tools-list">
+                            <span class="tool-tag">Microsoft Excel</span>
+                            <span class="tool-tag">PivotTable</span>
+                            <span class="tool-tag">PivotChart</span>
+                            <span class="tool-tag">Slicer</span>
+                            <span class="tool-tag">Timeline</span>
+                        </div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="card-icon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h3>Main Columns</h3>
+                        <ul class="columns-list">
+                            <li><i class="fas fa-calendar"></i> Tanggal</li>
+                            <li><i class="fas fa-cube"></i> Produk</li>
+                            <li><i class="fas fa-store"></i> Cabang</li>
+                            <li><i class="fas fa-tags"></i> Kategori</li>
+                            <li><i class="fas fa-credit-card"></i> Metode Pembayaran</li>
+                            <li><i class="fas fa-boxes"></i> Quantity</li>
+                            <li><i class="fas fa-money-bill-wave"></i> Revenue</li>
+                        </ul>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Analysis Goals</h3>
+                        <p>Mengetahui performa penjualan dan kategori produk dengan kontribusi tertinggi untuk pengambilan keputusan strategis</p>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Data Insights</h3>
+                        <p>Analisis mendalam terhadap pola pembelian, preferensi konsumen, dan tren penjualan untuk optimasi inventaris dan strategi pemasaran</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KPI Summary Section -->
+        <section id="kpi" class="kpi-summary">
+            <div class="container">
+                <div class="section-header">
+                    <h2>KPI SUMMARY</h2>
+                    <p>Key Performance Indicators at a glance with real-time updates</p>
+                </div>
+
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>TOTAL REVENUE</h3>
+                            <div class="kpi-value" data-target="37757500">Rp0</div>
+                            <p>Total pendapatan selama periode</p>
+                        </div>
+                        <div class="kpi-sparkline"></div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>TOTAL TRANSACTION</h3>
+                            <div class="kpi-value" data-target="991">0</div>
+                            <p>Jumlah transaksi berhasil</p>
+                        </div>
+                        <div class="kpi-sparkline"></div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>AOV (AVERAGE ORDER VALUE)</h3>
+                            <div class="kpi-value" data-target="38100">Rp0</div>
+                            <p>Nilai rata-rata transaksi</p>
+                        </div>
+                        <div class="kpi-sparkline"></div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>AVERAGE QUANTITY</h3>
+                            <div class="kpi-value" data-target="3.1">0.0</div>
+                            <p>Rata-rata item per transaksi</p>
+                        </div>
+                        <div class="kpi-sparkline"></div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>BEST PERFORMING CATEGORY</h3>
+                            <div class="kpi-value-text">Sabun</div>
+                            <p>Berdasarkan revenue tertinggi</p>
+                        </div>
+                        <div class="kpi-sparkline"></div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>BEST PERFORMING CITY</h3>
+                            <div class="kpi-value-text">Jakarta</div>
+                            <p>Berdasarkan revenue tertinggi</p>
+                        </div>
+                        <div class="kpi-sparkline"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>CONTACT ME</h2>
+                    <p>Get in touch for more information about our analytics solutions</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-left">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="src/profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+                                <div class="contact-overlay">
+                                    <div class="contact-info">
+                                        <div class="contact-detail">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>1mraffaizzelh@gmail.com</span>
+                                        </div>
+                                        <div class="contact-detail">
+                                            <i class="fas fa-phone"></i>
+                                            <span>+62 895 3004 6420</span>
+                                        </div>
+                                        <div class="contact-detail">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Banjar, Jawa Barat, Indonesia</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-content">
+                                <h3>Data Analyst</h3>
+                                <p>Specialized in retail analytics and business intelligence solutions</p>
+                                <div class="social-links">
+                                    <a href="https://www.linkedin.com/in/m-raffa-izzel-hendro-190302371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/Raffahmii" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/raffahmii?igsh=MWpwdTQwdjJhdGJndw==" class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <div class="contact-form-container">
+                            <h3>Send Message</h3>
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <i class="fas fa-user form-icon"></i>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <i class="fas fa-envelope form-icon"></i>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="project">Message</label>
+                                    <textarea id="project" name="project" rows="5" required></textarea>
+                                    <i class="fas fa-file-alt form-icon"></i>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Raffa_Project</span>
+                        </div>
+                        <p class="footer-description">
+                            Transforming retail data into actionable insights with powerful analytics and visualization tools.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/in/m-raffa-izzel-hendro-190302371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer-social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Raffahmii" class="footer-social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/raffahmii?igsh=MWpwdTQwdjJhdGJndw==" class="footer-social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com/RaffaHmii?t=TlWSrJ2dUp2SXp_H8UmlxQ&s=09" class="footer-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#dashboard">Dashboard</a></li>
+                            <li><a href="#about">About Data</a></li>
+                            <li><a href="#kpi">KPI Summary</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Data Analysis</a></li>
+                            <li><a href="#">Dashboard Design</a></li>
+                            <li><a href="#">KPI Tracking</a></li>
+                            <li><a href="#">Data Science</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <div class="contact-info-footer">
+                            <div class="contact-item-footer">
+                                <i class="fas fa-envelope"></i>
+                                <span>1mraffaizzelh@gmail.com</span>
+                            </div>
+                            <div class="contact-item-footer">
+                                <i class="fas fa-phone"></i>
+                                <span>+62 895 3004 6420</span>
+                            </div>
+                            <div class="contact-item-footer">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Banjar, Jawa Barat, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-divider"></div>
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 MRaffaIH. All rights reserved.</p>
+                        <div class="footer-legal">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
