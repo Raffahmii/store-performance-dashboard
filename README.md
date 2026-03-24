@@ -1,5 +1,5 @@
 ## 🖼 Dashboard Preview
-[![Dashboard](store-performance-web/images/dashboard-preview.png)]
+![Dashboard](store-performance-web/images/dashboard-preview.png)
 
 ---
 
